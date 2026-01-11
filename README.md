@@ -1,6 +1,6 @@
 # 🔐 AI Fraud Detection System
 
-An AI-powered web application designed to **detect suspicious financial transactions** in real time using data analysis and machine learning techniques.
+An AI-powered web application designed to **detect suspicious financial transactions** in real time using  machine learning techniques.
 
 ## 🚀 Project Overview
 This project analyzes transaction patterns to identify potential fraud based on abnormal behavior such as high transaction amounts, unusual frequency, location mismatch, and device changes.  
@@ -53,6 +53,7 @@ It is suitable for **FinTech, banking, and digital payment platforms**.
 - Real-time alert system  
 - Dashboard for fraud analytics  
 - Integration with live payment APIs  
+
 
 
 
