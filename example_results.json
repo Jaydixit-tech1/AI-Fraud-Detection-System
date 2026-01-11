@@ -1,0 +1,41 @@
+[
+  {
+    "transaction_id": "TXN001",
+    "fraud_status": "Fraudulent",
+    "risk_score": 97,
+    "risk_factors": [
+      "Amount spike: 33.33x user average ($5000.00 vs $150.00)",
+      "Abnormal frequency: 12 transactions in last 24 hours",
+      "International transaction without history: USA \u2192 Russia",
+      "New device type detected: mobile",
+      "New IP address detected: 192.168.1.100"
+    ],
+    "reasoning": "Risk assessment for transaction TXN001:\nHIGH RISK - Multiple suspicious indicators detected:\n1. Amount spike: 33.33x user average ($5000.00 vs $150.00)\n2. Abnormal frequency: 12 transactions in last 24 hours\n3. International transaction without history: USA \u2192 Russia\n4. New device type detected: mobile\n5. New IP address detected: 192.168.1.100\n\nOverall risk score: 97/100",
+    "recommended_action": "Block transaction immediately"
+  },
+  {
+    "transaction_id": "TXN002",
+    "fraud_status": "Legitimate",
+    "risk_score": 0,
+    "risk_factors": [
+      "Known low-risk merchant category: Groceries"
+    ],
+    "reasoning": "Risk assessment for transaction TXN002:\nLOW RISK - Minor anomalies detected:\n1. Known low-risk merchant category: Groceries\n\nOverall risk score: 0/100",
+    "recommended_action": "Allow transaction"
+  },
+  {
+    "transaction_id": "TXN003",
+    "fraud_status": "Fraudulent",
+    "risk_score": 72,
+    "risk_factors": [
+      "Amount spike: 6.00x user average ($1200.00 vs $200.00)",
+      "Elevated frequency: 6 transactions in last 24 hours",
+      "New device type detected: web",
+      "New IP address detected: 192.168.1.300",
+      "High-risk merchant category: Gambling",
+      "Unusual transaction time: 03:00 (off-peak hours)"
+    ],
+    "reasoning": "Risk assessment for transaction TXN003:\nHIGH RISK - Multiple suspicious indicators detected:\n1. Amount spike: 6.00x user average ($1200.00 vs $200.00)\n2. Elevated frequency: 6 transactions in last 24 hours\n3. New device type detected: web\n4. New IP address detected: 192.168.1.300\n5. High-risk merchant category: Gambling\n6. Unusual transaction time: 03:00 (off-peak hours)\n\nOverall risk score: 72/100",
+    "recommended_action": "Block transaction immediately"
+  }
+]

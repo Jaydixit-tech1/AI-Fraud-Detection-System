@@ -1,0 +1,38 @@
+[
+  {
+    "transaction_id": "TXN_SAMPLE_001",
+    "fraud_status": "Legitimate",
+    "risk_score": 25,
+    "risk_factors": [
+      "Amount spike: 25.00x user average ($2500.00 vs $100.00)"
+    ],
+    "reasoning": "Risk assessment for transaction TXN_SAMPLE_001:\nLOW RISK - Minor anomalies detected:\n1. Amount spike: 25.00x user average ($2500.00 vs $100.00)\n\nOverall risk score: 25/100",
+    "recommended_action": "Allow transaction"
+  },
+  {
+    "transaction_id": "TXN_SAMPLE_002",
+    "fraud_status": "Legitimate",
+    "risk_score": 0,
+    "risk_factors": [
+      "Known low-risk merchant category: Restaurant"
+    ],
+    "reasoning": "Risk assessment for transaction TXN_SAMPLE_002:\nLOW RISK - Minor anomalies detected:\n1. Known low-risk merchant category: Restaurant\n\nOverall risk score: 0/100",
+    "recommended_action": "Allow transaction"
+  },
+  {
+    "transaction_id": "TXN_SAMPLE_003",
+    "fraud_status": "Fraudulent",
+    "risk_score": 100,
+    "risk_factors": [
+      "Amount spike: 40.00x user average ($8000.00 vs $200.00)",
+      "Abnormal frequency: 15 transactions in last 24 hours",
+      "International transaction without history: USA \u2192 UK",
+      "New device type detected: web",
+      "New IP address detected: 192.168.1.300",
+      "Known low-risk merchant category: Retail",
+      "Unusual transaction time: 02:00 (off-peak hours)"
+    ],
+    "reasoning": "Risk assessment for transaction TXN_SAMPLE_003:\nHIGH RISK - Multiple suspicious indicators detected:\n1. Amount spike: 40.00x user average ($8000.00 vs $200.00)\n2. Abnormal frequency: 15 transactions in last 24 hours\n3. International transaction without history: USA \u2192 UK\n4. New device type detected: web\n5. New IP address detected: 192.168.1.300\n6. Known low-risk merchant category: Retail\n7. Unusual transaction time: 02:00 (off-peak hours)\n\nOverall risk score: 100/100",
+    "recommended_action": "Block transaction immediately"
+  }
+]
